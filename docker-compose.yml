@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: konsantin/react-app
+    command: npm run start
+    ports:
+      -3000:3000
+    volumes:
+      - ./src:/src
+      - ./package.json:/package.json
+      - ./package-lock.json:/package-lock.json
+      - ./node_modules:/node_modules

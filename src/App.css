@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+
 .App {
   text-align: center;
+  margin-top: 200px;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +40,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* button */
+
+.btn {
+  margin-top: 100px;
+  color:black;
+  background: #ff0808;
+  background-image: -webkit-linear-gradient(top, #ff0808, #eb21a4);
+  background-image: -moz-linear-gradient(top, #ff0808, #eb21a4);
+  background-image: -ms-linear-gradient(top, #ff0808, #eb21a4);
+  background-image: -o-linear-gradient(top, #ff0808, #eb21a4);
+  background-image: linear-gradient(to bottom, #ff0808, #eb21a4);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-color: #ff0808;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 36px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  font-family: 'Rubik Doodle Shadow';
+}
+
+.btn:hover {
+  background: #ff05ee;
+  background-image: -webkit-linear-gradient(top, #ff05ee, #ff0000);
+  background-image: -moz-linear-gradient(top, #ff05ee, #ff0000);
+  background-image: -ms-linear-gradient(top, #ff05ee, #ff0000);
+  background-image: -o-linear-gradient(top, #ff05ee, #ff0000);
+  background-image: linear-gradient(to bottom, #ff05ee, #ff0000);
+  text-decoration: none;
 }
