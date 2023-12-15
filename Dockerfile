@@ -1,13 +1,14 @@
-FROM node:14-apline
+FROM node:14-alpine
 
 WORKDIR /app
 
 COPY package.json /app/package.json
+COPY package-lock.json /app/package-lock.json
 
 RUN npm install
 
-COPY ./app
+COPY . /app
 
 EXPOSE 3000
 
-CMD [ "npm","run","start" ]
+CMD ["npm", "run", "start"]

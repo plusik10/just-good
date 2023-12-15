@@ -5,10 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: konsantin/react-app
+    image: konstantin/react-app
     command: npm run start
     ports:
-      -3000:3000
+      - "3000:3000"
     volumes:
       - ./src:/src
       - ./package.json:/package.json
